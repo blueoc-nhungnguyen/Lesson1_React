@@ -1,0 +1,76 @@
+.statistic-container {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 40px;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.statistic-card {
+    min-width: 170px;
+    min-height: 110px;
+    border-radius: 12px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px 32px 24px 32px;
+}
+
+.statistic-total {
+    background: #FFF9C4 !important;
+}
+
+.statistic-active {
+    background: #C8E6C9 !important;
+}
+
+.statistic-completed {
+    background: #E0E0E0 !important;
+}
+
+.statistic-rate {
+    background: #fff !important;
+    flex: 2;
+    min-width: 270px;
+    justify-content: flex-start;
+}
+
+.statistic-label {
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.statistic-value {
+    font-weight: 700;
+    font-size: 56px;
+    color: #222;
+    line-height: 1;
+}
+
+.statistic-rate-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.statistic-progress {
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    background: #eee !important;
+}
+.statistic-progress .MuiLinearProgress-bar {
+    background-color: #222 !important;
+}
+
+.statistic-rate-value {
+    font-weight: 500;
+    font-size: 18px;
+    color: #222;
+    min-width: 40px;
+    text-align: right;
+}
