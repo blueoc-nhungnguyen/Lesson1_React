@@ -58,7 +58,6 @@ function TaskListHeader({ onAddTask, onFilterChange, taskCounts }) {
                 </Button>
             </Box>
 
-            {/* Filter Chips */}
             <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
                 <Chip
                     label={`All (${taskCounts.all})`}
@@ -83,10 +82,9 @@ function TaskListHeader({ onAddTask, onFilterChange, taskCounts }) {
                 />
             </Box>
 
-            {/* Input Form BELOW filter chips */}
             {isAddingTask && (
                 <Card sx={{
-                    border: '2px solid #1976d2', // blue border
+                    border: '2px solid #1976d2',
                     boxShadow: 0,
                     borderRadius: 2,
                     mb: 2

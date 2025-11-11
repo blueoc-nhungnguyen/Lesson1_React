@@ -25,7 +25,6 @@ function TaskList() {
     const [filter, setFilter] = useState('all');
     const [deleteDialog, setDeleteDialog] = useState({ open: false, taskId: null });
 
-    // Load tasks from localStorage on mount (with 12 hour expiration)
     useEffect(() => {
         try {
             const raw = localStorage.getItem(STORAGE_KEY);
@@ -47,7 +46,6 @@ function TaskList() {
         }
     }, []);
 
-    // Persist tasks + timestamp whenever tasks change
     useEffect(() => {
         try {
             const payload = { tasks, timestamp: Date.now() };
